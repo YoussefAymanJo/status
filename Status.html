@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="img-cont">
+            <img src="logo words.png" alt="logo">
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#" class="here">Status</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div>
+            <button id="dark-mode">Light mode</button>
+        </div>
+    </nav>
+    <p>Choose your construction location</p>
+    <!--- The map where the user choose the loc-->
+    <div id="map" style="height:300px;"></div>
+    <p id="coords">Location Data</p>
+    <!--Dashboard that show weather data and soil type-->
+    <div id="Dashboard">
+        <div class="data" id="weather">
+            <h3>Weather Data</h3>
+            <p>Temperature: <span id="temp">...</span> °C</p>
+            <p>Humidity: <span id="humidity">...</span> %</p>
+            <p>Condition: <span id="condition">...</span></p>
+        </div>
+        <div class="data" id="air-quality">
+            <h3>Air Quality Data</h3>
+            <p>PM2.5: <span id="pm25">...</span></p>
+            <p>PM10: <span id="pm10">...</span></p>
+            <p>O₃: <span id="o3">...</span></p>
+        </div>
+        <div class="data" id="soil">
+            <h3>Soil Properties</h3>
+            <p>Type: <span id="soil-type">...</span></p>
+        </div>
+    </div>
+    <footer id="footer">
+        <p id="footer-text">
+            Made with <abbr title="love">❤️</abbr> by
+            <a href="https://leaderboard-seven-pi.vercel.app/" target="_blank">CS club members</a>
+        </p>
+    </footer>
+    <!--Library for leaflet interactive-->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

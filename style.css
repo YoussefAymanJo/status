@@ -1,0 +1,173 @@
+:root {
+    --background-white: #D1E0D7;
+    --background-blue: #607EBC;
+    --text-color: #1a1a1a;
+    --prc: white;
+    --snd: #eef0ef;
+    --bg-color: #607EBC;
+}
+
+nav {
+    background-color: var(--bg-color);
+    height: 10vh;
+    border-radius: 50px;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-top: 3vh;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: var(--prc);
+    font-size: 18px;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li {
+    display: inline;
+}
+
+nav>ul>li>a:hover {
+    color: black;
+    transition: 1s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav>div>button {
+    color: var(--bg-color);
+    background-color: var(--prc);
+    outline: none;
+    border: 2px transparent solid;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+nav>div>button:hover {
+    color: var(--prc);
+    background-color: black;
+    transition: 1s;
+}
+
+.img-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.img-cont>img {
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom left, var(--background-white), var(--background-blue));
+    color: var(--text-color);
+    font-family: "Mogra", system-ui;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+a {
+    color: #00a2ff;
+    text-decoration: none;
+}
+
+header h1 {
+    margin: 0;
+    color: #f0f0f0;
+    font-size: xx-large;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+button {
+    background-color: #f0f0f0;
+    color: #1a1a1a;
+    border: 3px solid #00a2ff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner-img {
+    width: 57rem;
+    height: 32rem;
+    margin-top: 2rem;
+    border-radius: 20px;
+}
+
+
+
+.section {
+    text-align: center;
+}
+
+.air-pollution {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    place-items: center;
+}
+
+
+footer {
+    margin-top: 2rem;
+    padding: 0.1rem;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+abbr:hover {
+    cursor: default;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#Dashboard {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 25px;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.data {
+    background: #D1E0D7;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: black !important;
+    font-weight: bold;
+}
